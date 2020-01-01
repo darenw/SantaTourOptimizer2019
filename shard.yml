@@ -1,0 +1,13 @@
+name: tourscheduler8
+version: 0.8.0
+
+authors:
+  - darenw <darenw@darenscotwilson.com>
+
+targets:
+  tourscheduler8:
+    main: src/tourscheduler8.cr
+
+crystal: 0.32.0
+
+license: MIT
