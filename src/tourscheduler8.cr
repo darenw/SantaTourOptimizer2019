@@ -22,5 +22,10 @@ module TourScheduler
   end
 
   fulldemands.print_head_tail
-  
+
+  daypops = DayPopParams.new(125, 300)
+  fullproblem = Problem.new(fulldemands, daypops)
+
+  Bloviator.complain(">> Code to solve the problem is missing! <<")
+  Bloviator.score("blah blah 1 22 333 4444 %d %d %d "  % [1200, 1300, 1400] )
 end
