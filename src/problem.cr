@@ -9,19 +9,20 @@ module TourScheduler
 
 struct DayPopParams
     property mindaypop
-    getter maxdaypop
+    property maxdaypop
 
-    def initialize(@minpop : Int32, @maxpop : Int32)
+    def initialize(@mindaypop : Int32, @maxdaypop : Int32)
     end
 end
 
 
 class Problem
 
+    getter name
     getter demands : DemandList
     getter daypops : DayPopParams
 
-    def initialize(@demands : DemandList, @daypops : DayPopParams)
+    def initialize(@name : String, @demands : DemandList, @daypops : DayPopParams)
     end
 end
 
